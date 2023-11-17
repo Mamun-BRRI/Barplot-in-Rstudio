@@ -17,7 +17,7 @@ ggplot(R,aes(Location,GY,fill=Genotype))+
         axis.text.y = element_text(size = 14,color = "black",angle = 0))+
   scale_y_continuous(expand = c(0,0))
 
-ggsave("Barplot figure.tiff",height = 7,width = 14,dpi=200)
+ggsave("Barplot figure.png",height = 7,width = 14,dpi=200)
 ## Facet genotype
 ###
 ggplot(R,aes(Location,GY,fill=Genotype))+
@@ -32,5 +32,5 @@ ggplot(R,aes(Location,GY,fill=Genotype))+
         axis.text.y = element_text(size = 14,color = "black",angle = 0))+
   scale_y_continuous(expand = c(0,0))+
   facet_wrap(.~Genotype)
-ggsave("Barplot figure1.tiff",height = 7,width = 14,dpi=200)
+ggsave("Barplot figure1.png",height = 7,width = 14,dpi=200)
 #### End
